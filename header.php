@@ -11,24 +11,7 @@ if (isset($message)) {
 }
 ?>
 
-<header class="header">
-   <div class="header-1">
-      <div class="flex">
-         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
-         <div>
-            <p>
-               <img src="./public/header/login.svg" alt="login"><a href="login.php">login</a>
-            </p> | <p><img src="./public/header/login.svg" alt="login"><a href="register.php">register</a></p>
-         </div>
-      </div>
-   </div>
-
-   <div class="header-2">
+   <div class="header">
       <div class="flex">
          <a href="home.php" class="logo"><img src="public/icon/logo.png" alt="logo">Bookist</a>
 
@@ -52,11 +35,9 @@ if (isset($message)) {
          </div>
 
          <div class="user-box">
-            <p>username : <span><?php echo $_SESSION['user_name']; ?></span></p>
-            <p>email : <span><?php echo $_SESSION['user_email']; ?></span></p>
-            <a href="logout.php" class="delete-btn">logout</a>
+            <p><img src="./public/header/account/user.svg" alt="user_icon">user : <span><?php echo $_SESSION['user_name']; ?></span></p>
+            <p><img src="./public/header/account/email.svg" alt="email.svg">email : <span><?php echo $_SESSION['user_email']; ?></span></p>
+            <a href="logout.php" class="delete-btn"><img src="./public/header/logout.svg" alt="logout_icon">logout</a>
          </div>
       </div>
    </div>
-
-</header>
