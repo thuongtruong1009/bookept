@@ -30,12 +30,12 @@
             <img src="./public/footer/google_store.png" alt="google_store" width="170">
             <img src="./public/footer/microsoft_store.png" alt="microsoft_store" width="170">
          </div>
-         <div class="certificate">
-            <img src="./public/footer/register_bocongthuong_red.png" alt="red" width="170">
-            <img src="./public/footer/register_bocongthuong_blue.png" alt="blue" width="170">
-            <img src="./public/footer/copyright.png" alt="copyright" width="100">
+         <div class="certificate" style="margin:1rem 0;">
+            <img src="./public/footer/register_bocongthuong_red.png" alt="red" width="130">
+            <img src="./public/footer/register_bocongthuong_blue.png" alt="blue" width="130" style="margin: 0 0.75rem;">
+            <img src="./public/footer/copyright.png" alt="copyright" width="70">
          </div>
-         <img src="./public/footer/payment_method.png" alt="payment" width="288" style="margin-top:2rem">
+         <img src="./public/footer/payment_method.png" alt="payment" width="288">
       </div>
 
    </div>
