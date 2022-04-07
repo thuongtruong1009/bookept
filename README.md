@@ -1,7 +1,11 @@
 <h1 align="center">
-    <img src="./public/favicon.ico"/>
+    <img src="./public/favicon.ico" width="36"/>
     BOOKIST
 </h1>
+
+![login](public/preview/login.png)
+![header](public/preview/header.png)
+![footer](public/preview/footer.png)
 
 ## Useful link
 * Online shopping with [e-shopee](https://github.com/thuongtruong1009/e-shopee)
