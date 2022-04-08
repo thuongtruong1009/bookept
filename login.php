@@ -84,7 +84,8 @@ if (isset($_POST['submit'])) {
                <input type="password" name="password" placeholder="enter your password" required />
             </div>
             <div class="btn-group">
-               <button class="btn btn--primary" type="submit" name="submit" value="login now">Sign in</button><a class="btn--text" href="register.php">register now</a>
+               <button class="btn btn--primary" type="submit" name="submit" value="login now">Sign in</button>
+               <a class="btn--text" href="register.php">register now</a>
             </div>
          </div>
       </form>

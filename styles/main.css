@@ -36,6 +36,7 @@
   text-decoration: none;
   transition: all 0.2s linear;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 *::selection {
@@ -45,7 +46,7 @@
 
 *::-webkit-scrollbar {
   height: 0.5rem;
-  width: 0.75rem;
+  width: 0.5rem;
 }
 
 *::-webkit-scrollbar-track {
@@ -208,7 +209,7 @@ h2 {
   position: relative;
   width: 100%;
   max-width: 50rem;
-  transform: skewY(-5deg) translateY(10%) scale(0.94);
+  transform: skewY(-1deg) translateY(10%) scale(0.94);
   transition: box-shadow var(--duration) var(--ease),
     transform var(--duration) var(--ease);
 }
@@ -227,7 +228,7 @@ h2 {
   top: 0;
   right: 100%;
   transform-origin: 100% 100%;
-  transform: skewY(-35deg) scaleX(-1);
+  transform: skewY(-30deg) scaleX(-1);
   z-index: -1;
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
@@ -236,7 +237,7 @@ h2 {
   top: 0;
   left: 100%;
   transform-origin: 0 0;
-  transform: skewY(-35deg) scaleX(-1);
+  transform: skewY(-30deg) scaleX(-1);
   z-index: 2;
   border-top-right-radius: 0.75rem;
   border-bottom-right-radius: 0.75rem;
@@ -331,10 +332,12 @@ h2 {
   text-transform: uppercase;
 }
 
-.header .flex .navbar a:hover {
+.header .flex .navbar a:hover,
+.header .flex .navbar a:active {
   color: var(--purple);
   text-shadow: 1.5px 1.5px 2px #888;
 }
+
 .header .flex .icons > * {
   font-size: 2.5rem;
   color: var(--black);
@@ -647,15 +650,17 @@ h2 {
   justify-content: space-evenly;
   align-items: start;
   flex-wrap: wrap;
+  background: #F4F3F3;
 }
 .contact form {
-  background-color: var(--light-bg);
-  border-radius: 0.5rem;
-  border: var(--border);
+  border-radius: 1rem;
   padding: 2rem;
   max-width: 50rem;
   text-align: center;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
+  box-shadow: 5px 5px 30px rgb(220, 220, 220);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2042508-jpeg.jpg");
+  background-size: cover;
 }
 
 .contact form h3 {
@@ -668,12 +673,21 @@ h2 {
 .contact form .box {
   margin: 1rem 0;
   width: 100%;
-  border: var(--border);
   background-color: var(--white);
-  padding: 1.2rem 1.4rem;
-  font-size: 1.8rem;
+  padding: 1.1rem 1.4rem;
+  font-size: 1.6rem;
   color: var(--black);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
+  transition: 0.3s linear;
+}
+.contact form .box:hover,
+.contact form .box:focus{
+  box-shadow: 1px 1px 3px rgba(187, 0, 255, 0.77);
+}
+.contact form .box::placeholder{
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 1.4rem;
 }
 
 .contact form textarea {
@@ -681,7 +695,7 @@ h2 {
   resize: none;
 }
 .contact-info > iframe {
-  border-radius: 0.75rem;
+  border-radius: 1rem;
   border: 3px solid var(--purple);
   margin-bottom: 1.5rem;
   box-shadow: var(--box-shadow);
@@ -691,7 +705,12 @@ h2 {
   align-items: center;
   gap: 0.5em;
   font-size: 1.4rem;
-  padding: 0.25rem 0;
+  margin: 0.25rem 0;
+}
+.contact-social{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
 }
 
 /* ********************************************************** */

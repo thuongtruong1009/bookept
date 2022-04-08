@@ -57,42 +57,41 @@ if (isset($_POST['send'])) {
 
    <section class="contact">
       <form action="" method="post">
-         <h3>say something!</h3>
-         <input type="text" name="name" required placeholder="enter your name" class="box">
-         <input type="email" name="email" required placeholder="enter your email" class="box">
-         <input type="number" name="number" required placeholder="enter your number" class="box">
-         <textarea name="message" class="box" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
-         <input type="submit" value="send message" name="send" class="btn">
+         <h3>&#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;say something!</h3>
+         <input type="text" name="name" required placeholder="full name" class="box">
+         <input type="email" name="email" required placeholder="email" class="box">
+         <input type="number" name="number" required placeholder="phone number" class="box">
+         <textarea name="message" class="box" placeholder="type your message..." id="" cols="30" rows="10"></textarea>
+         <input type="submit" value="📧 send message" name="send" class="btn">
       </form>
       <div class="contact-info">
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1316505217173!2d106.7994309147447!3d10.87759006029277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a415a9d221%3A0x550c2b41569376f9!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBRdeG7kWMgVOG6vyAtIMSQ4bqhaSBo4buNYyBRdeG7kWMgZ2lhIFRQLkhDTQ!5e0!3m2!1svi!2s!4v1647529939482!5m2!1svi!2s" width="600" height="300" allowfullscreen="" loading="lazy"></iframe>
          <div class="contact-infor-content">
             <div>
                <img src="./public/contact/location.svg" alt="address">
-               <p>International University, 6 Quater, Linh Trung ward, Thu Duc dist, Ho Chi Minh city.</p>
-            </div>
-            <div>
-               <img src="./public/contact/email.svg" alt="email">
-               <p>Email: ititiu19228@student.hcmiu.edu.vn</p>
+               <p>International University, 6 quater, Linh Trung ward, Thu Duc dist, Ho Chi Minh city.</p>
             </div>
             <div>
                <img src="./public/contact/phone.svg" alt="hotline">
                <p>Hotline: (+84) 917 085 937</p>
             </div>
-            <div>
+         </div>
+         <div class="contact-social">
+            <a href="">
                <img src="./public/contact/website.svg" alt="website">
-               <p>Website: https://facebook.com/thuongtruong1009</p>
-            </div>
+            </a>
+            <a href="">
+               <img src="./public/contact/messenger.svg" alt="messenger">
+            </a>
+            <a href="">
+               <img src="./public/contact/github.svg" alt="github">
+            </a>
+            <a href="mailto:ititiu19228@student.hcmiu.edu.vn">
+               <img src="./public/contact/email.svg" alt="email">
+            </a>
          </div>
       </div>
    </section>
-
-
-
-
-
-
-
 
    <?php include 'footer.php'; ?>
 
