@@ -425,51 +425,83 @@ h2 {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 30rem);
+  grid-template-columns: repeat(auto-fit, 25rem);
   align-items: flex-start;
   gap: 1.5rem;
   justify-content: center;
 }
 
 .products .box-container .box {
-  border-radius: 0.5rem;
-  background-color: var(--white);
   box-shadow: var(--box-shadow);
-  padding: 2rem;
-  text-align: center;
-  border: var(--border);
-  position: relative;
+  border-radius: var(--card-radius);
+  --card-size: 50rem;
+  --card-radius: 0.75rem;
+}
+.products .box-container .box .image{
+  height: calc(var(--card-size) * 3/5);
+  display: inline-block;
+  overflow: hidden;
+}
+.products .box-container .box .image > img {
+  width: 100%;
+  border-top-left-radius: var(--card-radius);
+  border-top-right-radius: var(--card-radius);
+  display: block;
+}
+.products .box-container .box .details{
+  background: #FAFAFA;
+  padding: 1rem;
 }
 
-.products .box-container .box .image {
-  height: 30rem;
-}
-
-.products .box-container .box .name {
-  padding: 1rem 0;
+.products .box-container .box .details .name {
   font-size: 2rem;
+  font-weight: 500;
   color: var(--black);
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+.products .box-container .box .details .qty-pri{
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 2rem;
+padding: 1rem 0;
+border-bottom: 1px solid #e9e9e9;
+margin-bottom: 1rem;
 }
 
 .products .box-container .box .qty {
-  width: 100%;
-  padding: 1.2rem 1.4rem;
+  max-width: 29%;
+  padding: 1rem;
   border-radius: 0.5rem;
-  border: var(--border);
-  margin: 1rem 0;
-  font-size: 2rem;
+  border: 1px solid #e9e9e9;
 }
 
 .products .box-container .box .price {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  font-size: 2.5rem;
-  color: var(--white);
-  background-color: var(--red);
+  color: var(--red);
 }
+.products .box-container .box .action{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products .box-container .box .action > button{
+  background: var(--purple);
+  border-radius: 0.5rem;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.7em;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  cursor: pointer;
+}
+.products .box-container .box .action > img{
+  padding: 0.25rem;
+  cursor: pointer;
+}
+/* ************************* ABOUT ************************* */
 
 .about .flex {
   max-width: 1200px;
