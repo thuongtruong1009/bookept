@@ -7,6 +7,9 @@
 ![header](public/preview/header.png)
 ![footer](public/preview/footer.png)
 
+## Reference
++ [checkout-template](https://www.bolt.com/thinkshop/checkout-page-best-practices-templates-examples-to-end-abandonment)
+
 ## Useful link
 * Online shopping with [e-shopee](https://github.com/thuongtruong1009/e-shopee)
   
