@@ -58,12 +58,17 @@ if(isset($_GET['delete_all'])){
 
 <section class="cart-container">
    <div class="cart-head">
+      <?php $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed'); ?>
       <div class="head-left">
          <h2>My List</h2>
-         <h6>6 items</h6>
+         <h6>&bull; <?php echo mysqli_num_rows($select_cart) ?> items</h6>
       </div>
       <div>
-         <button>Delete All</button>
+         <select name="sort_cart" id="sort_cart">
+            <option value="default">default</option>
+            <option value="alphabet">a-z</option>
+            <option value="low_to_high_price">Low to high price</option>
+         </select>
       </div>
    </div>
 
@@ -81,6 +86,7 @@ if(isset($_GET['delete_all'])){
             </div>
             <div class="name">
                <h2><?php echo $fetch_cart['name']; ?></h2>
+               <p>#id: <?php echo $fetch_cart['id']; ?></p>
             </div>
          </div>
          <form action="" method="post" class="cart-item-metrics">
@@ -109,53 +115,17 @@ if(isset($_GET['delete_all'])){
          echo '<p class="empty">your cart is empty</p>';
       }
       ?>
+      <li class="cart-action">
+         <div class="cart-btn">
+            <a href="shop.php" class="option-btn"><img src="./public/cart/continue.svg" alt="continue_icon">continue shopping</a>
+            <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>"><img src="./public/cart/checkout.svg" alt="checkout_icon">proceed to checkout</a>
+            <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');"><img src="./public/cart/remove.svg" alt="delete_all_icon">delete all</a>
+         </div>
+         <div class="cart-total">
+            <p>grand total : <span>$<?php echo $grand_total; ?></span></p>
+         </div>
+      </li>
    </ul>
-</section>
-
-<section class="shopping-cart">
-
-   <h1 class="title">products added</h1>
-
-   <div class="box-container">
-      <?php
-         $grand_total = 0;
-         $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
-         if(mysqli_num_rows($select_cart) > 0){
-            while($fetch_cart = mysqli_fetch_assoc($select_cart)){   
-      ?>
-      <div class="box">
-         <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a>
-         <img src="uploaded_img/<?php echo $fetch_cart['image']; ?>" alt="">
-         <div class="name"><?php echo $fetch_cart['name']; ?></div>
-         <div class="price">$<?php echo $fetch_cart['price']; ?>/-</div>
-         <form action="" method="post">
-            <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
-            <input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
-            <input type="submit" name="update_cart" value="update" class="option-btn">
-         </form>
-         <div class="sub-total"> sub total : <span>$<?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?>/-</span> </div>
-      </div>
-      <?php
-      $grand_total += $sub_total;
-         }
-      }else{
-         echo '<p class="empty">your cart is empty</p>';
-      }
-      ?>
-   </div>
-
-   <div style="margin-top: 2rem; text-align:center;">
-      <a href="cart.php?delete_all" class="delete-btn <?php echo ($grand_total > 1)?'':'disabled'; ?>" onclick="return confirm('delete all from cart?');">delete all</a>
-   </div>
-
-   <div class="cart-total">
-      <p>grand total : <span>$<?php echo $grand_total; ?>/-</span></p>
-      <div class="flex">
-         <a href="shop.php" class="option-btn">continue shopping</a>
-         <a href="checkout.php" class="btn <?php echo ($grand_total > 1)?'':'disabled'; ?>">proceed to checkout</a>
-      </div>
-   </div>
-
 </section>
 
 <?php include 'footer.php'; ?>
