@@ -113,11 +113,18 @@ section {
 }
 
 .btn,
-.option-btn,
 .delete-btn,
 .white-btn {
   display: inline-block;
   margin-top: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  color: var(--white);
+  font-size: 1.7em;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+.option-btn{
   padding: 1rem 3rem;
   cursor: pointer;
   color: var(--white);
@@ -527,7 +534,6 @@ margin-bottom: 1rem;
   padding: 2rem;
   max-width: 50rem;
   text-align: center;
-  /* box-shadow: var(--box-shadow); */
   box-shadow: 5px 5px 30px rgb(220, 220, 220);
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2042508-jpeg.jpg");
   background-size: cover;

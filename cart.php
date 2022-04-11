@@ -44,6 +44,7 @@ if(isset($_GET['delete_all'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/customers/cart.css">
 
 </head>
 <body>
@@ -54,6 +55,62 @@ if(isset($_GET['delete_all'])){
    <h3>shopping cart</h3>
    <p> <a href="home.php">home</a> / cart </p>
 </div>
+
+<section class="cart-container">
+   <div class="cart-head">
+      <div class="head-left">
+         <h2>My List</h2>
+         <h6>6 items</h6>
+      </div>
+      <div>
+         <button>Delete All</button>
+      </div>
+   </div>
+
+   <ul class="cart-list">
+      <?php
+         $grand_total = 0;
+         $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+         if(mysqli_num_rows($select_cart) > 0){
+            while($fetch_cart = mysqli_fetch_assoc($select_cart)){   
+      ?>
+      <li class="cart-item">
+         <div class="cart-item-content">
+            <div class="image">
+               <img src="uploaded_img/<?php echo $fetch_cart['image']; ?>" alt="">
+            </div>
+            <div class="name">
+               <h2><?php echo $fetch_cart['name']; ?></h2>
+            </div>
+         </div>
+         <form action="" method="post" class="cart-item-metrics">
+            <div class="item-quantity">
+               <input type="hidden" name="cart_id" value="<?php echo $fetch_cart['id']; ?>">
+               <input type="number" min="1" name="cart_quantity" value="<?php echo $fetch_cart['quantity']; ?>">
+            </div>
+            <div class="item-price">
+               <div>
+                  <div class="price">$<?php echo $fetch_cart['price']; ?> <span style="font-size: 1em; color:#888"> &bull; (<?php echo $sub_total = ($fetch_cart['quantity']); ?>)</span></div>
+                  <div class="sub-total"> sub total : <span>$<?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?></span></div>
+               </div>
+            </div>
+            <div class="item-btn">
+               <button type="submit" name="update_cart" value="update" class="option-btn">update</button>
+            </div>
+            <div class="item-delete">
+               <a href="cart.php?delete=<?php echo $fetch_cart['id']; ?>" class="fas fa-times" onclick="return confirm('delete this from cart?');"></a>
+            </div>
+         </form>
+      </li>
+      <?php
+      $grand_total += $sub_total;
+         }
+      }else{
+         echo '<p class="empty">your cart is empty</p>';
+      }
+      ?>
+   </ul>
+</section>
 
 <section class="shopping-cart">
 
