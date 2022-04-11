@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.cart-container{
+    background: #f4f4f4;
+    padding: 3rem 15rem;
+}
+.cart-container .cart-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.cart-container .cart-head h2{
+    font-size: 3em;
+}
+.cart-container .cart-head h6{
+    font-size: 1.5em;
+}
+.cart-container .cart-head select{
+    padding: 0.75rem 3rem;
+    border-radius: 2rem;
+    font-size: 1.5em;
+}
+.cart-container .cart-list{
+    background: white;
+    border-radius: 1rem;
+}
+.cart-container .cart-list .cart-item {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0.75rem 1.5rem;
+}
+.cart-container .cart-list .cart-item:hover{
+    background: #ededed;
+}
+.cart-item-content{
+    display: flex;
+}
+.cart-item-content .image > img{
+    max-width: 10rem;
+    border-radius: 0.75rem;
+}
+.cart-item-content .name{
+    font-family: 'Dancing Script', cursive;
+    display: grid;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0 2rem;
+}
+.cart-item-content .name h2{
+    font-size: 2em;
+    font-weight: 500;
+}
+.cart-item-content .name p{
+    font-size: 1.2em;
+    color: #888;
+    font-style: italic;
+    margin-top: 0.25rem;
+}
+.cart-item-metrics{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-item-metrics > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-item-metrics .item-quantity input:nth-child(2){
+    border: 1px solid #e9e9e9;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+.cart-item-metrics .item-price .price{
+    color: var(--red);
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-metrics .item-btn button{
+    height: fit-content;
+}
+.cart-item-metrics .item-delete{
+    font-size: 1.7em;
+}
+.cart-list .cart-action{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #84EA7A;
+    padding-bottom: 2rem;
+}
+.cart-list .cart-action .cart-btn{
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.cart-list .cart-action .cart-btn > a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cart-list .cart-action .cart-total{
+    background: #CCCCCC;
+    border-bottom-left-radius: 50rem;
+    padding: 1rem 5rem;
+    font-size: 1.7em;
+}
