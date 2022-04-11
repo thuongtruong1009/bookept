@@ -451,6 +451,7 @@ h2 {
 .products .box-container .box .details{
   background: #FAFAFA;
   padding: 1rem;
+  border-radius: 1rem;
 }
 
 .products .box-container .box .details .name {
