@@ -64,9 +64,8 @@
 
 .reviews .box-container .box {
   background-color: var(--white);
-  box-shadow: var(--box-shadow);
-  border: var(--border);
-  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px rgb(192, 192, 192);
+  border-radius: 0.75rem;
   text-align: center;
   padding: 2rem;
 }
@@ -75,6 +74,7 @@
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
+  float: left;
 }
 
 .reviews .box-container .box p {
@@ -111,17 +111,16 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: center;
 }
 
 .authors .box-container .box {
   position: relative;
   text-align: center;
-  border: var(--border);
-  box-shadow: var(--box-shadow);
+  box-shadow: 2px 2px 5px rgb(192, 192, 192);
+  border-radius: 0.75rem;
   overflow: hidden;
-  border-radius: 0.5rem;
 }
 
 .authors .box-container .box img {
@@ -146,9 +145,10 @@
   line-height: 4.5rem;
   font-size: 2rem;
   background-color: var(--white);
-  border: var(--border);
+  border: #888;
   display: block;
   margin-top: 1rem;
+  border-radius: 0.75rem;
   color: var(--black);
 }
 

@@ -76,7 +76,7 @@ if (!isset($user_id)) {
          <img src="https://www.aimgroupinternational.com/build/assets/why-choose-us/respect-clients.png" alt="respect-clients_img">
          <p>Respect customers</p>
       </div>
-</div>
+   </div>
 
    <section class="about">
       <div class="flex">
@@ -136,81 +136,93 @@ if (!isset($user_id)) {
       <h1 class="title">client's reviews</h1>
       <div class="box-container">
          <div class="box">
-            <img src="images/pic-1.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
+            <div class="review-infor">
+               <img src="images/pic-1.png" alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
             </div>
-            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
          </div>
 
          <div class="box">
-            <img src="images/pic-2.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
+            <div class="review-infor">
+               <img src="images/pic-2.png" alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
             </div>
-            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
          </div>
 
          <div class="box">
-            <img src="images/pic-3.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
+            <div class="review-infor">
+               <img src="images/pic-3.png" alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
             </div>
-            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
          </div>
 
          <div class="box">
-            <img src="images/pic-4.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
+            <div class="review-infor">
+               <img src="images/pic-5.png" alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
             </div>
-            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
          </div>
 
          <div class="box">
-            <img src="images/pic-5.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
+            <div class="review-infor">
+               <img src="images/pic-6.png" alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
             </div>
-            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
          </div>
 
          <div class="box">
-            <img src="images/pic-6.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
-            <div class="stars">
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star"></i>
-               <i class="fas fa-star-half-alt"></i>
+            <div class="review-infor">
+               <img src="images/pic-6.png" alt="">
+               <h3>john deo</h3>
+               <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+               </div>
             </div>
-            <h3>john deo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
          </div>
       </div>
    </section>
@@ -219,14 +231,14 @@ if (!isset($user_id)) {
       <h1 class="title">greate authors</h1>
       <div class="box-container">
          <div class="box">
-            <img src="images/author-1.jpg" alt="">
+            <img src="./public/about/author-1.jpg" alt="">
             <div class="share">
                <a href="#" class="fab fa-facebook-f"></a>
                <a href="#" class="fab fa-twitter"></a>
                <a href="#" class="fab fa-instagram"></a>
                <a href="#" class="fab fa-linkedin"></a>
             </div>
-            <h3>john deo</h3>
+            <h3>Thuong Truong</h3>
          </div>
 
          <div class="box">
@@ -242,39 +254,6 @@ if (!isset($user_id)) {
 
          <div class="box">
             <img src="images/author-3.jpg" alt="">
-            <div class="share">
-               <a href="#" class="fab fa-facebook-f"></a>
-               <a href="#" class="fab fa-twitter"></a>
-               <a href="#" class="fab fa-instagram"></a>
-               <a href="#" class="fab fa-linkedin"></a>
-            </div>
-            <h3>john deo</h3>
-         </div>
-
-         <div class="box">
-            <img src="images/author-4.jpg" alt="">
-            <div class="share">
-               <a href="#" class="fab fa-facebook-f"></a>
-               <a href="#" class="fab fa-twitter"></a>
-               <a href="#" class="fab fa-instagram"></a>
-               <a href="#" class="fab fa-linkedin"></a>
-            </div>
-            <h3>john deo</h3>
-         </div>
-
-         <div class="box">
-            <img src="images/author-5.jpg" alt="">
-            <div class="share">
-               <a href="#" class="fab fa-facebook-f"></a>
-               <a href="#" class="fab fa-twitter"></a>
-               <a href="#" class="fab fa-instagram"></a>
-               <a href="#" class="fab fa-linkedin"></a>
-            </div>
-            <h3>john deo</h3>
-         </div>
-
-         <div class="box">
-            <img src="images/author-6.jpg" alt="">
             <div class="share">
                <a href="#" class="fab fa-facebook-f"></a>
                <a href="#" class="fab fa-twitter"></a>
