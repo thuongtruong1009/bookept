@@ -137,8 +137,8 @@ if (!isset($user_id)) {
       <div class="box-container">
          <div class="box">
             <div class="review-infor">
-               <img src="images/pic-1.png" alt="">
-               <h3>john deo</h3>
+               <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/83979562_1585954714895087_6401964817036345344_n.jpg?stp=dst-jpg_s851x315&_nc_cat=102&ccb=1-5&_nc_sid=da31f3&_nc_ohc=1MuRolx3ffEAX-lSTUt&tn=FPvRyI_btj-7Gva_&_nc_ht=scontent.fhan3-1.fna&oh=00_AT_yMoTsSyuemsSWHismnUK5JLxkMqhP4NG1xoSnoRYToA&oe=62787958" alt="review_img_1">
+               <h3>Huu Nhat</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -147,13 +147,13 @@ if (!isset($user_id)) {
                   <i class="fas fa-star"></i>
                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Wonderful book for kids. My grandkids love it.</p>
          </div>
 
          <div class="box">
             <div class="review-infor">
-               <img src="images/pic-2.png" alt="">
-               <h3>john deo</h3>
+               <img src="https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/270012528_3144488045830078_518552516310324421_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=C5L0cUMkH2oAX_Vv8is&_nc_ht=scontent.fhan4-2.fna&oh=00_AT-UJ-y3bVr71OwgLhnGq0nXEc-rU14DtnP8dVlZHPop1Q&oe=62580435" alt="review_img_2">
+               <h3>Thanh Tung</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -162,13 +162,13 @@ if (!isset($user_id)) {
                   <i class="fas fa-star"></i>
                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>I read the whole thing on the exercise bike and couldn't put it down.</p>
          </div>
 
          <div class="box">
             <div class="review-infor">
-               <img src="images/pic-3.png" alt="">
-               <h3>john deo</h3>
+               <img src="./public/about/review-3.png" alt="review_img_3">
+               <h3>Duy Khang</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -177,13 +177,13 @@ if (!isset($user_id)) {
                   <i class="fas fa-star"></i>
                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Enjoyable, easy read. I smiled and hooked. Definitely read this one.</p>
          </div>
 
          <div class="box">
             <div class="review-infor">
-               <img src="images/pic-5.png" alt="">
-               <h3>john deo</h3>
+            <img src="./public/about/review-4.png" alt="review_img_4">
+               <h3>Dinh Thinh</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -192,12 +192,12 @@ if (!isset($user_id)) {
                   <i class="fas fa-star"></i>
                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Well worth the reader's time and a book to make you smile.</p>
          </div>
 
          <div class="box">
             <div class="review-infor">
-               <img src="images/pic-6.png" alt="">
+            <img src="./public/about/review-5.png" alt="review_img_5">
                <h3>john deo</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
@@ -207,12 +207,12 @@ if (!isset($user_id)) {
                   <i class="fas fa-star"></i>
                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>This book took your interest and kept going until the last page.</p>
          </div>
 
          <div class="box">
             <div class="review-infor">
-               <img src="images/pic-6.png" alt="">
+            <img src="./public/about/review-6.png" alt="review_img_6">
                <h3>john deo</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
@@ -222,7 +222,7 @@ if (!isset($user_id)) {
                   <i class="fas fa-star"></i>
                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Wow! This was a really good book. Tense and exciting.</p>
          </div>
       </div>
    </section>
