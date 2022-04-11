@@ -198,7 +198,7 @@ if (!isset($user_id)) {
          <div class="box">
             <div class="review-infor">
             <img src="./public/about/review-5.png" alt="review_img_5">
-               <h3>john deo</h3>
+               <h3>Thanh Son</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -213,7 +213,7 @@ if (!isset($user_id)) {
          <div class="box">
             <div class="review-infor">
             <img src="./public/about/review-6.png" alt="review_img_6">
-               <h3>john deo</h3>
+               <h3>Tran Phong</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
