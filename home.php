@@ -45,6 +45,7 @@ if (isset($_POST['add_to_cart'])) {
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/customers/service.css">
 </head>
 
 <body>
@@ -83,7 +84,7 @@ if (isset($_POST['add_to_cart'])) {
                      <div class="qty-pri">
                         <input type="number" min="1" name="product_quantity" value="1" class="qty">
                         <div class="price">
-                           $<?php echo $fetch_products['price']; ?>/-
+                           <span style="font-size:0.7em">$</span><?php echo $fetch_products['price']; ?>
                         </div>
                      </div>
                      <div class="action">
@@ -100,16 +101,34 @@ if (isset($_POST['add_to_cart'])) {
          ?>
       </div>
 
-      <div class="load-more" style="margin-top: 2rem; text-align:center">
-         <a href="shop.php" class="option-btn">load more</a>
+      <div class="load-more" style="margin-top: 3rem; text-align:center">
+         <a href="shop.php" class="transparent-btn">load more...</a>
       </div>
    </section>
 
    <section class="home-contact">
+      <div>
+         <img src="https://cdn.pixabay.com/photo/2022/03/01/08/11/call-center-7040784_960_720.png" alt="" style="border-radius: 1rem; width:32rem; height:25rem">
+      </div>
       <div class="content">
-         <h3>have any questions?</h3>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque cumque exercitationem repellendus, amet ullam voluptatibus?</p>
-         <a href="contact.php" class="white-btn">contact us</a>
+         <div class="service-title">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFwUZmt1x3c_O9OQEuyVIumLVmi3p85OEW-A&usqp=CAU" alt="" style="width:4rem">
+            <h3>have any questions?</h3>
+         </div>
+         <div class="service-content">
+            <p>24/7 customer care team ready to answer all your questions.</p>
+            <p>Contact us for the best service support!</p>
+         </div>
+         <div class="service-feature">
+            <p><img src="./public/service/tick.svg" alt="tick">24/7</p>
+            <p><img src="./public/service/tick.svg" alt="tick">Fast</p>
+            <p><img src="./public/service/tick.svg" alt="tick">Friendly</p>
+            <p><img src="./public/service/tick.svg" alt="tick">Enthusiasm</p>
+            <p><img src="./public/service/tick.svg" alt="tick">Professional</p>
+         </div>
+         <div>
+            <a href="contact.php" class="option-btn">contact us</a>
+         </div>
       </div>
    </section>
 

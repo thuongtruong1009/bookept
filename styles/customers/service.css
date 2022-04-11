@@ -1,0 +1,25 @@
+.home-contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.home-contact .content{
+    display: grid;
+    align-content: center;
+}
+.home-contact .content .service-title {
+    display: flex;
+    gap: 0.5em;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.home-contact .content .service-content{
+    margin: 2rem 0 1rem 0;
+    font-size: 1.7rem;
+}
+.home-contact .content .service-feature{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
