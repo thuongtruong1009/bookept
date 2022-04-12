@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    height: 7vh;
+    font-family: 'Anek Tamil', sans-serif;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+nav .logo > img{
+    width: 2rem;
+}
+nav .link{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+}
+nav h3{
+    border: 1px solid #dcdcdc;
+    border-radius: 2rem;
+    padding: 0.25rem 1.25rem;
+    background: #e9e9e9;
+}
+nav h3:hover{
+    background: #dfdfdf;
+}
+main{
+    /* background-image: url("../public/index/background.png"); */
+    background-image: url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1290&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93vh;
+    flex-wrap: wrap;
+}
+main .content{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+main .content > div{
+    background-color:#000000;
+    color: #ffffff;
+    width: 60%;
+    border: 1.5px solid gray;
+    border-radius: 1rem;
+    text-align: left;
+    word-wrap: break-word;
+    padding: 1rem;
+}
+main .content > div > h3{
+    font-size: 1em;
+    font-size: 1.7em;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: 'Updock', cursive;
+}
+main .content > div > a{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5rem 2rem;
+    border: 2px solid #888;
+    border-radius: 2rem;
+    width: fit-content;
+    margin-top: 0.75rem;
+    background: white;
+    color: black;
+    transition: 0.3s linear;
+}
+main .content > div > a:hover{
+    background: black;
+    color: white;
+}
+main .sample{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+}
+main .sample > img{
+    width: 44%;
+    z-index: 0;
+}
+main .sample div{
+    background-image: url("../public/index/screen.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 11.5%;
+    left: 30.8%;
+    width: 38.5%;
+    height: 76.8%;
+    z-index: 2;
+}
+

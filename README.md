@@ -3,8 +3,11 @@
     BOOKIST
 </h1>
 
+![index](public/preview/index.png)
 ![login](public/preview/login.png)
 ![header](public/preview/header.png)
+![home_product](public/preview/home_product.png)
+![service](public/preview/service.png)
 ![footer](public/preview/footer.png)
 
 ## Reference
