@@ -78,39 +78,6 @@ if (isset($_POST['order_btn'])) {
    </div>
 
    <section class="checkout-container">
-      <div class="summary-order">
-         <div class="summary-header">
-            <h3>Your cart</h3>
-            <h3>3</h3>
-         </div>
-         <div class="summary-list">
-            <?php
-            $grand_total = 0;
-            $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
-            if (mysqli_num_rows($select_cart) > 0) {
-               while ($fetch_cart = mysqli_fetch_assoc($select_cart)) {
-                  $total_price = ($fetch_cart['price'] * $fetch_cart['quantity']);
-                  $grand_total += $total_price;
-            ?>
-                  <div class="summary-item">
-                     <h6><?php echo $fetch_cart['name']; ?></h6>
-                     <p><?php echo '$' . $fetch_cart['price'] . ' x ' . $fetch_cart['quantity']; ?></p>
-                  </div>
-            <?php
-               }
-            } else {
-               echo '<p class="empty">your cart is empty</p>';
-            }
-            ?>
-         </div>
-         <div class="summary-total">
-            <h3>grand total : </h3>
-            <p>$<?php echo $grand_total; ?></p>
-         </div>
-      </div>
-   </section>
-
-   <section class="checkout">
       <form action="" method="post">
          <h3>place your order</h3>
          <div class="flex">
@@ -137,32 +104,68 @@ if (isset($_POST['order_btn'])) {
                </select>
             </div>
             <div class="inputBox">
-               <span>address line 01 :</span>
+               <span>house number :</span>
                <input type="number" min="0" name="flat" required placeholder="e.g. flat no.">
             </div>
             <div class="inputBox">
-               <span>address line 01 :</span>
+               <span>street :</span>
                <input type="text" name="street" required placeholder="e.g. street name">
             </div>
             <div class="inputBox">
                <span>city :</span>
-               <input type="text" name="city" required placeholder="e.g. mumbai">
+               <input type="text" name="city" required placeholder="e.g. New York">
             </div>
             <div class="inputBox">
-               <span>state :</span>
-               <input type="text" name="state" required placeholder="e.g. maharashtra">
+               <span>state/province :</span>
+               <input type="text" name="state" required placeholder="e.g. Ohio">
             </div>
             <div class="inputBox">
                <span>country :</span>
-               <input type="text" name="country" required placeholder="e.g. india">
+               <input type="text" name="country" required placeholder="e.g. United States">
             </div>
             <div class="inputBox">
-               <span>pin code :</span>
-               <input type="number" min="0" name="pin_code" required placeholder="e.g. 123456">
+               <span>ZIP code :</span>
+               <input type="number" min="0" name="pin_code" required placeholder="e.g. 1234567">
             </div>
          </div>
-         <input type="submit" value="order now" class="btn" name="order_btn">
+         <div style="display: flex; justify-content:end">
+            <input type="submit" value="order now" class="btn" name="order_btn">
+         </div>
       </form>
+
+      <?php
+      $grand_total = 0;
+      $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE user_id = '$user_id'") or die('query failed');
+      ?>
+
+      <div class="summary-order">
+         <div class="summary-header">
+            <h3>Your cart</h3>
+            <h3 style="background: #888; border-radius: 50%; padding: 0.25rem 0.5em; color:white;"><?php echo mysqli_num_rows($select_cart) ?></h3>
+         </div>
+         <div class="summary-list">
+            <?php
+            if (mysqli_num_rows($select_cart) > 0) {
+               while ($fetch_cart = mysqli_fetch_assoc($select_cart)) {
+                  $total_price = ($fetch_cart['price'] * $fetch_cart['quantity']);
+                  $grand_total += $total_price;
+            ?>
+                  <div class="summary-item">
+                     <p><?php echo $fetch_cart['name']; ?></p>
+                     <p><?php echo '$' . $fetch_cart['price']; ?> &bull; <?php echo $fetch_cart['quantity']; ?></p>
+                  </div>
+            <?php
+               }
+            } else {
+               echo '<p class="empty">your cart is empty</p>';
+            }
+            ?>
+         </div>
+         <div class="summary-total">
+            <p>grand total : </p>
+            <p style="color:red">$<?php echo $grand_total; ?></p>
+         </div>
+      </div>
    </section>
 
    <?php include 'footer.php'; ?>
