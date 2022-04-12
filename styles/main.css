@@ -666,38 +666,7 @@ margin-bottom: 1rem;
   font-size: 1.8rem;
   margin: 1rem 0;
 }
-
-.placed-orders .box-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.placed-orders .box-container .empty {
-  flex: 1;
-}
-
-.placed-orders .box-container .box {
-  flex: 1 1 40rem;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  border: var(--border);
-  background-color: var(--light-bg);
-  padding: 1rem 2rem;
-}
-
-.placed-orders .box-container .box p {
-  padding: 1rem 0;
-  font-size: 2rem;
-  color: var(--light-color);
-}
-
-.placed-orders .box-container .box p span {
-  color: var(--purple);
-}
+/* **********************  SEARCH FORM ********************* */
 
 .search-form form {
   max-width: 1200px;
