@@ -1,0 +1,114 @@
+/* 
+.display-order {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.display-order p {
+  background-color: var(--light-bg);
+  color: var(--black);
+  font-size: 2rem;
+  padding: 1rem 1.5rem;
+  border: var(--border);
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.display-order p span {
+  color: var(--red);
+}
+
+.display-order .grand-total {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: var(--light-color);
+}
+
+.display-order .grand-total span {
+  color: var(--red);
+} */
+.checkout-container{
+    display: flex;
+    justify-content: space-between;
+}
+.summary-order{
+    width: 30rem;
+}
+.summary-order .summary-header{
+    display: flex;
+    justify-content: space-between;
+}
+.summary-order .summary-list{
+    border: 1px solid #e9e9e9;
+    border-radius: 0.5rem;
+}
+.summary-order .summary-header,
+.summary-order .summary-list .summary-item,
+.summary-order .summary-total{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+.summary-order .summary-list .summary-item:not(:last-child){
+    border-bottom: 1px solid #e9e9e9;
+}
+/* .summary-order .summary-total > button{
+    border-radius: 0.5rem;
+    background: var(--purple);
+    color: white;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+    padding: 0.25rem 1rem;
+}
+.summary-order .summary-total > button:hover{
+    background: black;
+} */
+
+.checkout form {
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+  border: var(--border);
+  background-color: var(--light-bg);
+  border-radius: 0.5rem;
+}
+
+.checkout form h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.checkout form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.checkout form .flex .inputBox {
+  flex: 1 1 40rem;
+}
+
+.checkout form .flex span {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.checkout form .flex select,
+.checkout form .flex input {
+  border: var(--border);
+  width: 100%;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: var(--white);
+  padding: 1.2rem 1.4rem;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
