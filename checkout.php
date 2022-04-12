@@ -79,22 +79,22 @@ if (isset($_POST['order_btn'])) {
 
    <section class="checkout-container">
       <form action="" method="post">
-         <h3>place your order</h3>
+         <h3><i class="fa-solid fa-folder-open"></i> place your order</h3>
          <div class="flex">
             <div class="inputBox">
-               <span>your name :</span>
+               <span><i class="fa-solid fa-signature"></i> your name :</span>
                <input type="text" name="name" required placeholder="enter your name">
             </div>
             <div class="inputBox">
-               <span>your number :</span>
+               <span><i class="fa-solid fa-hashtag"></i> your number :</span>
                <input type="number" name="number" required placeholder="enter your number">
             </div>
             <div class="inputBox">
-               <span>your email :</span>
+               <span><i class="fa-solid fa-at"></i> your email :</span>
                <input type="email" name="email" required placeholder="enter your email">
             </div>
             <div class="inputBox">
-               <span>payment method :</span>
+               <span><i class="fa-solid fa-money-check-dollar"></i> payment method :</span>
                <select name="method">
                   <option value="cash on delivery">cash on delivery</option>
                   <option value="credit card">credit card</option>
@@ -104,32 +104,32 @@ if (isset($_POST['order_btn'])) {
                </select>
             </div>
             <div class="inputBox">
-               <span>house number :</span>
+               <span><i class="fa-solid fa-house"></i> house number :</span>
                <input type="number" min="0" name="flat" required placeholder="e.g. flat no.">
             </div>
             <div class="inputBox">
-               <span>street :</span>
+               <span><i class="fa-solid fa-location-dot"></i> street :</span>
                <input type="text" name="street" required placeholder="e.g. street name">
             </div>
             <div class="inputBox">
-               <span>city :</span>
+               <span><i class="fa-solid fa-city"></i> city :</span>
                <input type="text" name="city" required placeholder="e.g. New York">
             </div>
             <div class="inputBox">
-               <span>state/province :</span>
+               <span><i class="fa-brands fa-squarespace"></i> state/province :</span>
                <input type="text" name="state" required placeholder="e.g. Ohio">
             </div>
             <div class="inputBox">
-               <span>country :</span>
+               <span><i class="fa-solid fa-earth-americas"></i> country :</span>
                <input type="text" name="country" required placeholder="e.g. United States">
             </div>
             <div class="inputBox">
-               <span>ZIP code :</span>
+               <span><i class="fa-solid fa-file-zipper"></i> ZIP code :</span>
                <input type="number" min="0" name="pin_code" required placeholder="e.g. 1234567">
             </div>
          </div>
          <div style="display: flex; justify-content:end">
-            <input type="submit" value="order now" class="btn" name="order_btn">
+            <input type="submit" value="🚩 order now" class="btn" name="order_btn">
          </div>
       </form>
 
@@ -140,8 +140,8 @@ if (isset($_POST['order_btn'])) {
 
       <div class="summary-order">
          <div class="summary-header">
-            <h3>Your cart</h3>
-            <h3 style="background: #888; border-radius: 50%; padding: 0.25rem 0.5em; color:white;"><?php echo mysqli_num_rows($select_cart) ?></h3>
+            <h2><i class="fa-solid fa-cart-flatbed"></i> Your cart</h2>
+            <h5 style="background: #888; border-radius: 50%; width:3.5rem; height:3.5rem; color:white; display:flex; justify-content:center; align-items:center"><?php echo mysqli_num_rows($select_cart) ?></h5>
          </div>
          <div class="summary-list">
             <?php
@@ -162,7 +162,7 @@ if (isset($_POST['order_btn'])) {
             ?>
          </div>
          <div class="summary-total">
-            <p>grand total : </p>
+            <p><i class="fa-solid fa-border-all"></i> grand total : </p>
             <p style="color:red">$<?php echo $grand_total; ?></p>
          </div>
       </div>
