@@ -51,6 +51,7 @@ if (isset($_POST['submit'])) {
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="./styles//customers/login.css">
 </head>
 
 <body>
