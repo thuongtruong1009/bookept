@@ -36,7 +36,10 @@ if(isset($_POST['add_to_cart'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>search page</title>
+   <title>Bookist | Search</title>
+   <meta name="description" content="Knowledge space for nerds. Search online books by subject and add them to your favorite cart">
+   <meta name="keywords" content="php, sql, mysql, html, css, javascript, book">
+   <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -62,7 +65,6 @@ if(isset($_POST['add_to_cart'])){
 </section>
 
 <section class="products" style="padding-top: 0;">
-
    <div class="box-container">
    <?php
       if(isset($_POST['submit'])){
@@ -91,17 +93,7 @@ if(isset($_POST['add_to_cart'])){
       }
    ?>
    </div>
-  
-
 </section>
-
-
-
-
-
-
-
-
 
 <?php include 'footer.php'; ?>
 
