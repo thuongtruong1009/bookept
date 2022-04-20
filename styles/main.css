@@ -65,6 +65,9 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
 }
+body{
+  padding-top: 5rem;
+}
 
 section {
   padding: 3rem 2rem;
@@ -166,7 +169,8 @@ ul{
 }
 
 .heading {
-  min-height: 30vh;
+  margin-top: 1.5rem;
+  min-height: 32vh;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -219,6 +223,11 @@ ul{
 .header {
   background-color: var(--white);
   box-shadow: var(--box-shadow);
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 0.3s ease-out;
+  position: fixed;
 }
 
 .header.active {
@@ -227,6 +236,11 @@ ul{
   left: 0;
   right: 0;
   z-index: 1000;
+  opacity: 0.9;
+  --tw-shadow-color: 107, 114, 128;
+  --tw-shadow: 0 4px 6px -1px rgba(var(--tw-shadow-color), 0.1), 0 2px 4px -1px rgba(var(--tw-shadow-color), 0.06);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .header .flex {
