@@ -89,8 +89,13 @@ if(isset($_POST['update_product'])){
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-   <!-- custom admin css file link  -->
+   <!-- c   tom admin css file link  -->
+   <link rel="stylesheet" href="styles/main.css">
+
    <link rel="stylesheet" href="styles/admin.css">
+
+   <link rel="stylesheet" href="styles/admin/product.css">
+
 
 </head>
 <body>
@@ -99,7 +104,7 @@ if(isset($_POST['update_product'])){
 
 <!-- product CRUD section starts  -->
 
-<section class="add-products">
+<section class="products">
 
    <h1 class="title">shop products</h1>
 
@@ -117,7 +122,7 @@ if(isset($_POST['update_product'])){
 
 <!-- show products  -->
 
-<section class="show-products">
+<!-- <section class="show-products">
 
    <div class="box-container">
 
@@ -127,7 +132,10 @@ if(isset($_POST['update_product'])){
             while($fetch_products = mysqli_fetch_assoc($select_products)){
       ?>
       <div class="box">
-         <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
+      <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
+      <div class="image">
+                     <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
+                  </div>
          <div class="name"><?php echo $fetch_products['name']; ?></div>
          <div class="price">$<?php echo $fetch_products['price']; ?>/-</div>
          <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">update</a>
@@ -141,7 +149,55 @@ if(isset($_POST['update_product'])){
       ?>
    </div>
 
-</section>
+</section> -->
+
+<section class="products">
+      <h1 class="title">latest products</h1>
+      <div class="box-container">
+         <?php
+         $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 8") or die('query failed');
+         if (mysqli_num_rows($select_products) > 0) {
+            while ($fetch_products = mysqli_fetch_assoc($select_products)) {
+         ?>
+               <form action="" method="post" class="box">
+                  <input type="hidden" name="product_price" value="<?php echo $fetch_products['price']; ?>" class="price">
+                  <input type="hidden" name="product_image" value="<?php echo $fetch_products['image']; ?>">
+
+                  <div class="image">
+                     <img src="uploaded_img/<?php echo $fetch_products['image']; ?>" alt="">
+                  </div>
+                  <div class="details">
+                     <div class="name">
+                        <img src="./public/card/name.svg" alt="name_icon">
+                        <?php echo $fetch_products['name']; ?>
+                     </div>
+                     <input type="hidden" name="product_name" value="<?php echo $fetch_products['name']; ?>">
+                     <div class="qty-pri">
+                        <input type="number" min="1" name="product_quantity" value="1" class="qty">
+                        <div class="price">
+                           <span style="font-size:0.7em">$</span><?php echo $fetch_products['price']; ?>
+                        </div>
+                     </div>
+                     <div class="action">
+                     <!-- <div class="name"><?php echo $fetch_products['name']; ?></div> -->
+                     <a href="admin_products.php?update=<?php echo $fetch_products['id']; ?>" class="option-btn">update</a>
+                     <a href="admin_products.php?delete=<?php echo $fetch_products['id']; ?>" class="delete-btn" onclick="return confirm('delete this product?');">delete</a>
+                     </div>
+                  </div>
+                  
+               </form>
+         <?php
+            }
+         } else {
+            echo '<p class="empty">no products added yet!</p>';
+         }
+         ?>
+      </div>
+
+      <div class="load-more" style="margin-top: 3rem; text-align:center">
+         <a href="shop.php" class="transparent-btn">load more...</a>
+      </div>
+   </section>
 
 <section class="edit-product-form">
 

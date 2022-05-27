@@ -68,10 +68,10 @@ if (isset($_POST['submit'])) {
    }
    ?>
 
-   <div class="form-container">
+<div class="form-container">
       <form class="login_form" action="" method="post">
          <div class="form-inner">
-            <h2>login now</h2>
+            <h2>Login now</h2>
             <div class="input-group">
                <div class="icon">
                   <img src="./public/form/user.svg" alt="user">
@@ -86,8 +86,8 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="btn-group">
                <button class="btn btn--primary" type="submit" name="submit" value="login now">Sign in</button>
-               <a class="btn--text" href="register.php">register now</a>
             </div>
+            <p>Don't have account? <a class="btn--text" href="register.php">register now</a></p>
          </div>
       </form>
    </div>

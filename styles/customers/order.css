@@ -1,11 +1,13 @@
-:root{
+:root {
     --radius: 1rem;
 }
-.order-container{
+
+.order-container {
     box-shadow: 2px 2px 4px #b3fffa;
     background: #EDECFE;
 }
-.order-container .order-title{
+
+.order-container .order-title {
     background: #6D7AE0;
     text-align: center;
     border-top-left-radius: var(--radius);
@@ -14,34 +16,41 @@
     font-size: 1.9em;
     color: white;
 }
-table{
+
+table {
     width: 100%;
     box-shadow: 2px 31px 5px rgb(195, 195, 195), 2px 0px 5px rgb(195, 195, 195);
     border-collapse: collapse;
 }
+
 table tr:nth-child(2n) {
     background-color: white;
 }
+
 table tr:nth-child(2n+1) {
     background-color: #edf7f8;
 }
-table tr:first-child{
+
+table tr:first-child {
     text-transform: capitalize;
     background: #DAEFF1;
     border-bottom: 1px solid #e9e9e9;
 }
-table tr:first-child td{
+
+table tr:first-child td {
     font-weight: 500;
     font-size: 1.3em;
 }
-table tr td{
+
+table tr td {
     text-align: start;
     vertical-align: middle;
     padding: 1rem;
     word-wrap: break-word;
     font-size: 1.2em;
 }
-.order-container .order-total{
+
+.order-container .order-total {
     display: flex;
     justify-content: end;
     padding: 0.75rem 3rem;

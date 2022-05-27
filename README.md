@@ -1,6 +1,6 @@
 <h1 align="center">
     <img src="./public/favicon.ico" width="36"/>
-    BOOKIST
+    BOOKEPT
 </h1>
 
 ![index](public/preview/index.png)

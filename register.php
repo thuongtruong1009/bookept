@@ -44,6 +44,7 @@ if (isset($_POST['submit'])) {
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/customers/register.css">
 
 </head>
 
@@ -64,19 +65,39 @@ if (isset($_POST['submit'])) {
    }
    ?>
 
-   <div class="form-container">
-      <form action="" method="post">
-         <h3>register now</h3>
-         <input type="text" name="name" placeholder="enter your name" required class="box">
-         <input type="email" name="email" placeholder="enter your email" required class="box">
-         <input type="password" name="password" placeholder="enter your password" required class="box">
-         <input type="password" name="cpassword" placeholder="confirm your password" required class="box">
+<div class="form-container">
+      <form class="register_form" action="" method="post">
+      <div class="form-inner">
+         <h2>Register now</h2>
+         <div class="input-group">
+               <div class="icon">
+                  <img src="./public/form/user.svg" alt="user">
+               </div>
+               <input type="text" name="name" placeholder="enter your name" required class="box">
+         </div>
+         <div class="input-group">
+               <div class="icon">
+                  <i class="fa-regular fa-envelope"></i>
+               </div>
+               <input type="email" name="email" placeholder="enter your email" required class="box">
+         </div>
+         <div class="input-group">
+               <input type="password" name="password" placeholder="enter your password" required class="box">
+         </div>
+         <div class="input-group">
+               <input type="password" name="cpassword" placeholder="confirm your password" required class="box">
+         </div>
+         <div class="input-group">
          <select name="user_type" class="box">
             <option value="user">user</option>
             <option value="admin">admin</option>
          </select>
+         </div>
+         <div class="btn-group">
          <input type="submit" name="submit" value="register now" class="btn">
-         <p>already have an account? <a href="login.php">login now</a></p>
+         </div>
+         <p>Already have an account? <a href="login.php">login now</a></p>
+      </div>
       </form>
    </div>
 

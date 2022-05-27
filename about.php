@@ -140,7 +140,7 @@ if (!isset($user_id)) {
       <div class="box-container">
          <div class="box">
             <div class="review-infor">
-               <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/83979562_1585954714895087_6401964817036345344_n.jpg?stp=dst-jpg_s851x315&_nc_cat=102&ccb=1-5&_nc_sid=da31f3&_nc_ohc=1MuRolx3ffEAX-lSTUt&tn=FPvRyI_btj-7Gva_&_nc_ht=scontent.fhan3-1.fna&oh=00_AT_yMoTsSyuemsSWHismnUK5JLxkMqhP4NG1xoSnoRYToA&oe=62787958" alt="review_img_1">
+               <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t1.6435-9/83979562_1585954714895087_6401964817036345344_n.jpg?_nc_cat=102&ccb=1-6&_nc_sid=174925&_nc_ohc=p7UrNJk3O4sAX-kVq4E&_nc_ht=scontent.fsgn2-5.fna&oh=00_AT8DVxDK0qXrUYVetgE1Kc1NJ4NHewozqcFt_g0eBvsu1A&oe=62ABE3D8" alt="review_img_1">
                <h3>Huu Nhat</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>
@@ -155,7 +155,7 @@ if (!isset($user_id)) {
 
          <div class="box">
             <div class="review-infor">
-               <img src="https://scontent.fhan4-2.fna.fbcdn.net/v/t39.30808-6/270012528_3144488045830078_518552516310324421_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=174925&_nc_ohc=C5L0cUMkH2oAX_Vv8is&_nc_ht=scontent.fhan4-2.fna&oh=00_AT-UJ-y3bVr71OwgLhnGq0nXEc-rU14DtnP8dVlZHPop1Q&oe=62580435" alt="review_img_2">
+               <img src="https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-6/270012528_3144488045830078_518552516310324421_n.jpg?_nc_cat=110&ccb=1-6&_nc_sid=174925&_nc_ohc=SX8_BepqJZoAX-l8IIk&_nc_ht=scontent.fsgn2-6.fna&oh=00_AT9EpmidHI0EJRqtjNDGKO8SSpUplJKau7ZaUApP5JR7FA&oe=62897475" alt="review_img_2">
                <h3>Thanh Tung</h3>
                <div class="stars">
                   <i class="fas fa-star"></i>

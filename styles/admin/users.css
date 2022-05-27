@@ -1,0 +1,15 @@
+.box {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px #888;
+    padding: 2rem;
+    display: grid;
+    justify-content: center;
+    font-size: 1.4em;
+}
+
+.delete-btn {
+    background-color: var(--red);
+    padding: 0.5rem 1rem;
+    text-align: center;
+}

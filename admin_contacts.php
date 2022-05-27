@@ -31,6 +31,7 @@ if(isset($_GET['delete'])){
 
    <!-- custom admin css file link  -->
    <link rel="stylesheet" href="styles/admin.css">
+   <link rel="stylesheet" href="styles/admin/users.css" class="css">
 
 </head>
 <body>
@@ -49,11 +50,11 @@ if(isset($_GET['delete'])){
       
    ?>
    <div class="box">
-      <p> user id : <span><?php echo $fetch_message['user_id']; ?></span> </p>
-      <p> name : <span><?php echo $fetch_message['name']; ?></span> </p>
-      <p> number : <span><?php echo $fetch_message['number']; ?></span> </p>
-      <p> email : <span><?php echo $fetch_message['email']; ?></span> </p>
-      <p> message : <span><?php echo $fetch_message['message']; ?></span> </p>
+      <p> User id : <span><?php echo $fetch_message['user_id']; ?></span> </p>
+      <p> Name : <span><?php echo $fetch_message['name']; ?></span> </p>
+      <p> Number : <span><?php echo $fetch_message['number']; ?></span> </p>
+      <p> Email : <span><?php echo $fetch_message['email']; ?></span> </p>
+      <p> Message : <span><?php echo $fetch_message['message']; ?></span> </p>
       <a href="admin_contacts.php?delete=<?php echo $fetch_message['id']; ?>" onclick="return confirm('delete this message?');" class="delete-btn">delete message</a>
    </div>
    <?php
