@@ -57,7 +57,7 @@ if (isset($_POST['order_btn'])) {
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Bookist | Checkout</title>
+   <title>Bookept | Checkout</title>
    <meta name="description" content="Knowledge space for nerds. Search online books by subject and add them to your favorite cart">
    <meta name="keywords" content="php, sql, mysql, html, css, javascript, book">
    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">

@@ -46,7 +46,7 @@
          <span> | </span>
          <img src="./public/footer/vi_flag.svg" alt="vi">
       </div>
-      <p class="credit">Copyright <?php echo date('Y'); ?> by <a href=""><span>&copy; bookist</span></a> | All rights reserved.</p>
+      <p class="credit">Copyright <?php echo date('Y'); ?> by <a href="https://bookept.herokuapp.com"><span>&copy; bookept</span></a> | All rights reserved.</p>
       <div></div>
       
    </div>

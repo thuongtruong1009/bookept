@@ -13,7 +13,7 @@ if (isset($message)) {
 
 <div class="header">
    <div class="flex">
-      <a href="home.php" class="logo"><img src="public/icon/logo.png" alt="logo">Bookist</a>
+      <a href="home.php" class="logo"><img src="public/icon/logo.png" alt="logo">Bookept</a>
 
       <nav class="navbar">
          <a href="home.php"><img src="public/header/home_icon.svg" alt="home_icon">home</a>

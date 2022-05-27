@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookist</title>
+    <title>Bookept</title>
     <meta name="description" content="Knowledge space for nerds. Search online books by subject and add them to your favorite cart">
     <meta name="keywords" content="php, sql, mysql, html, css, javascript, book">
     <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
@@ -17,7 +17,7 @@
     <nav>
         <div class="logo">
             <img src="./public/favicon.ico" alt="">
-            <h2>Bookist</h2>
+            <h2>Bookept</h2>
         </div>
         <div class="link">
             <a href="admin_page.php">
@@ -29,7 +29,7 @@
     <main>
         <div class="content">
             <div>
-                <h3>Bookist: a dead simple reading list. Search books, add them to your Bookist and read them when you're ready. Once you finish the book, mark it read and watch your bookshelf stack up!</h3>
+                <h3>Bookept: a dead simple reading list. Search books, add them to your Bookist and read them when you're ready. Once you finish the book, mark it read and watch your bookshelf stack up!</h3>
                 <a href="home.php">
                 <i class="fa-solid fa-compass"></i>
                     <h3>Explore</h3>
