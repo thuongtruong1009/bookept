@@ -20,7 +20,7 @@ if (isset($message)) {
          <a href="about.php"><img src="public/header/about_icon.svg" alt="about_icon">about</a>
          <a href="shop.php"><img src="public/header/shop_icon.svg" alt="shop_icon">shop</a>
          <a href="contact.php"><img src="public/header/contact_icon.svg" alt="contact_icon">contact</a>
-         <a href="orders.php"><img src="public/header/Order_icon.svg" alt="order_icon">orders</a>
+         <a href="orders.php"><img src="public/header/order_icon.svg" alt="order_icon">orders</a>
       </nav>
 
       <div class="icons">

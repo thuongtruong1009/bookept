@@ -6,11 +6,11 @@ session_start();
 
 $user_id = $_SESSION['user_id'];
 
-if(!isset($user_id)){
+if (!isset($user_id)) {
    header('location:login.php');
 }
 
-if(isset($_POST['add_to_cart'])){
+if (isset($_POST['add_to_cart'])) {
 
    $product_name = $_POST['product_name'];
    $product_price = $_POST['product_price'];
@@ -19,19 +19,19 @@ if(isset($_POST['add_to_cart'])){
 
    $check_cart_numbers = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name' AND user_id = '$user_id'") or die('query failed');
 
-   if(mysqli_num_rows($check_cart_numbers) > 0){
+   if (mysqli_num_rows($check_cart_numbers) > 0) {
       $message[] = 'already added to cart!';
-   }else{
+   } else {
       mysqli_query($conn, "INSERT INTO `cart`(user_id, name, price, quantity, image) VALUES('$user_id', '$product_name', '$product_price', '$product_quantity', '$product_image')") or die('query failed');
       $message[] = 'product added to cart!';
    }
-
 }
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -40,28 +40,30 @@ if(isset($_POST['add_to_cart'])){
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="icon" href="public/favicon.ico">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="styles/main.css">
-   
+
    <link rel="stylesheet" href="styles/customers/service.css">
 
 
 </head>
+
 <body>
-   
-<?php include 'header.php'; ?>
 
-<div class="heading">
-   <h3>our shop</h3>
-   <p> <a href="home.php">home</a> / shop </p>
-</div>
+   <?php include 'header.php'; ?>
 
-<section class="products">
+   <div class="heading">
+      <h3>our shop</h3>
+      <p> <a href="home.php">home</a> / shop </p>
+   </div>
+
+   <section class="products">
       <h1 class="title">latest products</h1>
       <div class="box-container">
          <?php
-         $select_products = mysqli_query($conn, "SELECT * FROM `products` LIMIT 8") or die('query failed');
+         $select_products = mysqli_query($conn, "SELECT * FROM `products`") or die('query failed');
          if (mysqli_num_rows($select_products) > 0) {
             while ($fetch_products = mysqli_fetch_assoc($select_products)) {
          ?>
@@ -98,22 +100,14 @@ if(isset($_POST['add_to_cart'])){
          ?>
       </div>
 
-      <div class="load-more" style="margin-top: 3rem; text-align:center">
-         <a href="shop.php" class="transparent-btn">load more...</a>
-      </div>
    </section>
 
+   <?php include 'footer.php'; ?>
 
-
-
-
-
-
-
-<?php include 'footer.php'; ?>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+   </script>
 
 </body>
+
 </html>

@@ -180,11 +180,9 @@
 }
 
 .products .box-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 25rem);
-    align-items: flex-start;
+    grid-template-columns: repeat(auto-fit, 30rem);
     gap: 1.5rem;
     justify-content: center;
 }
@@ -194,11 +192,12 @@
     border-radius: var(--card-radius);
     --card-size: 50rem;
     --card-radius: 0.75rem;
+    min-height: 50rem;
 }
 
 .products .box-container .box .image {
     height: calc(var(--card-size) * 3/5);
-    display: inline-block;
+    /* display: inline-block; */
     overflow: hidden;
 }
 
@@ -249,17 +248,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0.25rem;
 }
 
 .products .box-container .box .action>button {
     background: var(--purple);
     border-radius: 0.5rem;
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem;
     font-size: 1.7em;
     display: flex;
     align-items: center;
-    gap: 0.25em;
     cursor: pointer;
 }
 
